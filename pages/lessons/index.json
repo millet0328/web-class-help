@@ -1,0 +1,6 @@
+{
+   "navigationBarTitleText": "请选择网课类型",
+   "usingComponents": {
+      "auth-modal": "../../component/auth-modal/index"
+   }
+}

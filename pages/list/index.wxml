@@ -1,0 +1,52 @@
+<!--pages/list/index.wxml-->
+<view class='container bg-grey'>
+   <!-- 用户资料 -->
+   <view class='user-box'>
+      <view class='name'>姓名：
+         <text class='blue'>{{name||"未知"}}</text>
+      </view>
+   </view>
+   <!-- 类表 -->
+   <view class='list-box'>
+      <view wx:for="{{list}}" wx:key="{{index}}" class='li'>
+         <view class='title'>
+            <label bindtap='itemCheckHandle' data-index='{{index}}' class="checkbox">
+               <checkbox value="" disabled='{{item.spgm!=0 && item.ksgm!=0}}' checked='{{item.allChecked}}' />{{item.kmmc}}
+            </label>
+            <view>￥{{item.spjg*2+item.ksjg*2}}元</view>
+         </view>
+         <view hidden='true' class='content'>
+            <label bindtap='spCheckHandle' data-index='{{index}}' class="checkbox">
+               <checkbox value="" checked='{{item.spChecked}}' disabled='{{item.spgm!=0}}' />
+               <view>
+                  课程：共 {{item.zs}} 集，剩余 {{item.sy}} 集，价格
+                  <text class='orange'>{{item.spjg*2}}</text> 元
+               </view>
+            </label>
+            <label bindtap='ksCheckHandle' data-index='{{index}}' class="checkbox">
+               <checkbox value="" checked='{{item.ksChecked}}' disabled='{{item.ksgm!=0}}' />
+               <view>测验：{{item.kssj}}，价格
+                  <text class='orange'>{{item.ksjg*2}}</text> 元，
+                  <text class='status blue'>{{item.kszt}}</text>
+               </view>
+            </label>
+         </view>
+      </view>
+   </view>
+   <!-- 统计bar -->
+   <view class='bottom-bar'>
+      <view class='left'>
+         <label bindtap='checkAllHandle' class="checkbox">
+            <checkbox value="" checked='{{allChecked}}' />
+            <text>全选</text>
+         </label>
+      </view>
+      <view class='right'>
+         <view>合计：
+            <text class='total'>￥{{totalPayment}}</text>
+         </view>
+         <view class='discount orange'>折后价：￥{{discountedPayment}}</view>
+         <button size="mini" type='primary' disabled="{{discountedPayment==0}}" bindtap="orderHandle">点我购买</button>
+      </view>
+   </view>
+</view>

@@ -1,0 +1,100 @@
+/* pages/order/index.wxss */
+
+.container {
+   padding-top: 110rpx;
+}
+
+.search-bar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   width: 100%;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   padding: 15rpx 30rpx;
+   background-color: white;
+   box-shadow: 0 0 10rpx 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+   flex: 1;
+   border: 1rpx solid #ccc;
+   border-right: 0;
+   border-bottom-left-radius: 8rpx;
+   border-top-left-radius: 8rpx;
+   padding: 13rpx;
+   height: 80rpx;
+   box-sizing: border-box;
+}
+
+.search-bar .btn {
+   background-color: #006dff;
+   padding: 17rpx;
+   border: 1rpx solid #006dff;
+   border-bottom-right-radius: 8rpx;
+   border-top-right-radius: 8rpx;
+   height: 80rpx;
+   box-sizing: border-box;
+}
+
+/* 订单列表 */
+
+.order-list {
+   padding: 20rpx;
+   padding-top: 0;
+}
+
+.order-list .li {
+   background-color: white;
+   padding: 30rpx;
+   margin-top: 20rpx;
+   border-radius: 10rpx;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   font-size: 30rpx;
+   box-shadow: 0 0 10rpx 0 rgba(0, 0, 0, 0.1);
+}
+
+.order-list .li view {
+   width: 50%;
+   padding-bottom: 30rpx;
+}
+
+.order-list .li .name, .order-list .li .real-time, .order-list .li .test-time {
+   width: 100%;
+}
+
+.order-list .li .action {
+   width: 100%;
+   /* display: flex; */
+   display: none;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 0;
+}
+
+.action button {
+   margin: 0;
+}
+
+/* 空列表 */
+
+.order-list.empty {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   font-size: 36rpx;
+   padding: 180rpx 0;
+}
+
+.order-list.empty[hidden] {
+   display: none;
+}
+
+.empty icon {
+   margin-right: 20rpx;
+}

@@ -1,0 +1,6 @@
+{
+   "navigationBarTitleText": "提取红包",
+   "usingComponents": {
+      "auth-modal": "../../component/auth-modal/index"
+   }
+}

@@ -1,0 +1,99 @@
+/* pages/login/index.wxss */
+
+.container {
+   padding-top: 10vh;
+}
+
+.bg {
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   left: 0;
+   top: 0;
+   filter: blur(10rpx);
+}
+
+form {
+   position: relative;
+   width: 560rpx;
+   margin: 0 auto;
+   padding: 8px;
+   background-color: rgba(255, 255, 255, 0.5);
+   border-radius: 8rpx;
+   display: block;
+}
+
+.form-group {
+   margin-bottom: 30rpx;
+}
+
+.form-group.school {
+   position: relative;
+   z-index: 100;
+}
+
+.title {
+   text-align: center;
+   color: #333;
+   font-size: 40rpx;
+   padding: 10rpx 0 20rpx;
+}
+
+.form-group input {
+   display: block;
+   width: 100%;
+   height: 80rpx;
+   padding: 12rpx 24rpx;
+   font-size: 32rpx;
+   color: #555;
+   background-color: #fff;
+   background-image: none;
+   border: 1px solid #ccc;
+   border-radius: 8rpx;
+   box-sizing: border-box;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+   -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.action-box {
+   margin-top: 60rpx;
+}
+
+.action-box .btn {
+   color: white;
+   border-radius: 8rpx;
+   font-size: 32rpx;
+   margin: 0;
+   line-height: 80rpx;
+}
+
+.action-box .login {
+   background-color: #006dff;
+   border-color: #003c8a;
+}
+
+.action-box .ticket {
+   background-color: #5bc0de;
+   border-color: #46b8da;
+}
+
+.selectBox {
+   position: absolute;
+   left: 0;
+   top: 82rpx;
+   width: 100%;
+   box-sizing: border-box;
+   background-color: #fff;
+   border-radius: 8rpx;
+   box-shadow: 0 0 10rpx 0 rgba(0, 0, 0, 0.4);
+}
+
+.selectBox .li {
+   padding: 18rpx 24rpx;
+   cursor: pointer;
+   font-size: 28rpx;
+   color: #006dff;
+}

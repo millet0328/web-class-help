@@ -1,0 +1,20 @@
+<!--pages/user/index.wxml-->
+<view class='container bg-grey'>
+   <!-- 用户资料 -->
+   <view class='user-card'>
+      <view class='avatar'>
+         <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class='nickname'>
+         <open-data type="userNickName" lang="zh_CN"></open-data>
+      </view>
+   </view>
+   <!-- 提示规则 -->
+   <view class='rule-box gray'>
+      <view wx:for="{{list}}" wx:key="{{index}}" class='li'>{{index+1}} . {{item}}</view>
+   </view>
+   <!-- 分享按钮 -->
+   <button class='shareBtn' open-type="share" type='primary'>分享</button>
+</view>
+<!-- 授权模态框 -->
+<auth-modal show='{{authModalShow}}' bind:getAuth='authHandle' bind:cancel='cancelAuth'></auth-modal>

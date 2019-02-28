@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view class='container bg-grey'>
+   <view class='lesson-box'>
+      <navigator wx:for="{{lessons}}" wx:key="{{index}}" url='../login/index?id={{item.val}}&type={{item.type}}&lesson={{item.name}}' class='li'>
+         <image class='img' src="{{item.img}}"></image>
+         <view class='name'>{{item.name}}</view>
+      </navigator>
+   </view>
+</view>
+<!-- 授权模态框 -->
+<auth-modal show='{{authModalShow}}' bind:getAuth='authHandle' bind:cancel='cancelAuth'></auth-modal>

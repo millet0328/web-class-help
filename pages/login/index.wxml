@@ -1,0 +1,22 @@
+<!--pages/login/index.wxml-->
+<view class='container'>
+  <image src='../../images/img/bg.jpg' class='bg'></image>
+  <form report-submit="true" bindsubmit="formSubmit">
+    <view class='title'>{{title}}</view>
+    <view wx:if="{{type==3}}" class='form-group school'>
+      <input name="x" bindinput="schoolHandle" value='{{x}}' placeholder="学校名称" />
+      <view hidden='{{!showSelect}}' class='selectBox'>
+        <view wx:for="{{schools}}" wx:key="{{index}}" data-name="{{item}}" bindtap='selectHandle' class='li'>{{item}}</view>
+      </view>
+    </view>
+    <view class='form-group'>
+      <input name="u" value='{{u}}' placeholder="学号/手机号/邮箱" />
+    </view>
+    <view class='form-group'>
+      <input name="p" value='{{p}}' password="true" placeholder="密码" />
+    </view>
+    <view class='action-box'>
+      <button class='btn login' form-type="submit">登录</button>
+    </view>
+  </form>
+</view>

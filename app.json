@@ -1,0 +1,40 @@
+{
+   "pages": [
+      "pages/lessons/index",
+      "pages/payback/index",
+      "pages/order/index",
+      "pages/payment/index",
+      "pages/list/index",
+      "pages/user/index",
+      "pages/login/index"
+   ],
+   "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "悠悠网课",
+      "navigationBarTextStyle": "black"
+   },
+   "tabBar": {
+      "selectedColor": "#006dff",
+      "list": [
+         {
+            "pagePath": "pages/lessons/index",
+            "text": "首页",
+            "iconPath": "images/icons/shouye.png",
+            "selectedIconPath": "images/icons/shouye_active.png"
+         },
+         {
+            "pagePath": "pages/order/index",
+            "text": "订单",
+            "iconPath": "images/icons/zhangdan.png",
+            "selectedIconPath": "images/icons/zhangdan_active.png"
+         },
+         {
+            "pagePath": "pages/user/index",
+            "text": "我的",
+            "iconPath": "images/icons/yonghu.png",
+            "selectedIconPath": "images/icons/yonghu_active.png"
+         }
+      ]
+   }
+}

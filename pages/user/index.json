@@ -1,0 +1,6 @@
+{
+   "navigationBarTitleText": "我的",
+   "usingComponents": {
+      "auth-modal": "../../component/auth-modal/index"
+   }
+}

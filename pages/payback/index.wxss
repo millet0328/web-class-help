@@ -1,0 +1,16 @@
+/* pages/index/index.wxss */
+
+.payback-box {
+   text-align: center;
+   padding: 50rpx 60rpx;
+}
+
+.money {
+   font-size: 120rpx;
+   color: #f0ad4e;
+   padding-bottom: 50rpx;
+}
+
+.money text {
+   font-size: 52rpx;
+}

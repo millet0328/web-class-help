@@ -1,0 +1,104 @@
+/* pages/list/index.wxss */
+
+.container {
+	padding-top: 8rpx;
+	padding-bottom: 91.2rpx;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+.user-box {
+	padding: 20rpx;
+	background-color: white;
+	color: #666;
+}
+
+.list-box {
+	padding: 16rpx;
+	padding-top: 0;
+}
+
+.list-box .li {
+	background-color: white;
+	color: #888;
+	box-shadow: 0 0 10rpx 0 rgba(0, 0, 0, 0.2);
+	border-radius: 6rpx;
+	margin-top: 16rpx;
+	overflow: hidden;
+}
+
+.list-box .li .title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20rpx 16rpx 20rpx 6rpx;
+	background-color: #136dbd;
+	color: white;
+}
+
+.list-box .li .status {
+	font-size: 26rpx;
+}
+
+.list-box .li checkbox {
+	transform: scale(0.65);
+}
+
+.list-box .li .content {
+	padding: 0 4rpx 28rpx;
+	font-size: 26rpx;
+}
+
+.list-box .li .content label {
+	display: flex;
+	align-items: center;
+	padding-top: 32rpx;
+}
+
+.list-box .li .footer {
+	padding: 20rpx;
+	text-align: right;
+	font-size: 28rpx;
+	border-top: 1rpx solid #dcdcdc;
+}
+
+/* 底部bar */
+
+.bottom-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 91.2rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 28rpx;
+	background-color: white;
+	padding: 16rpx 0;
+	box-sizing: border-box;
+}
+
+.bottom-bar .checkbox {
+	display: flex;
+	align-items: center;
+}
+
+.bottom-bar checkbox {
+	transform: scale(0.65);
+}
+
+.bottom-bar .right {
+	display: flex;
+	align-items: center;
+}
+
+.bottom-bar .right view,
+.bottom-bar .right button {
+	margin-right: 16rpx;
+}
+
+.bottom-bar .right .total {
+	color: #999;
+	text-decoration: line-through;
+}
