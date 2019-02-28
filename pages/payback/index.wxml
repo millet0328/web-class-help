@@ -1,9 +1,7 @@
 <!--pages/payback/index.wxml-->
 <view class='payback-box'>
    <view class='money'>
-      <text>￥</text>2.5
+      <text>￥</text>{{money}}
    </view>
-   <button type='primary'>取现</button>
+   <button bindtap='getMoney' type='primary'>取现</button>
 </view>
-<!-- 授权模态框 -->
-<auth-modal show='{{authModalShow}}' bind:getAuth='authHandle' bind:cancel='cancelAuth'></auth-modal>

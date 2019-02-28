@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "分享砍价",
-  "usingComponents": {
-    "auth-modal": "../../component/auth-modal/index"
-  }
-}
