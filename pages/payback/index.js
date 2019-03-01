@@ -37,13 +37,19 @@ Page({
             wx.showModal({
                title: '通知',
                content: '提现成功！',
-               showCancel: false
+               showCancel: false,
+               success: () => {
+                  this.showMoney();
+               }
             })
          } else {
             wx.showModal({
                title: '通知',
                content: '提现失败！',
-               showCancel: false
+               showCancel: false,
+               success: () => {
+                  this.showMoney();
+               }
             })
          }
       });

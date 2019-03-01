@@ -1,8 +1,8 @@
 {
    "pages": [
+      "pages/payback/index",
       "pages/calc/calc",
-      "pages/history/history",
-      "pages/payback/index"
+      "pages/history/history"
    ],
    "window": {
       "backgroundTextStyle": "light",
