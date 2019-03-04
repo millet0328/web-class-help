@@ -1,3 +1,5 @@
+// 工具函数
+
 function formatTime(date) {
   var year = date.getFullYear()
   var month = date.getMonth() + 1
@@ -8,7 +10,7 @@ function formatTime(date) {
   var second = date.getSeconds();
 
 
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+  return [year, month, day].map(formatNumber).join('.') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
 
 function formatNumber(n) {
@@ -16,6 +18,23 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+// 将一维数组转为二维数组
+function listToMatrix(list, elementPerSubArray) {
+  let matrix = [], i, k;
+
+  for (i = 0, k = -1; i < list.length; i += 1) {
+    if (i % elementPerSubArray === 0) {
+      k += 1;
+      matrix[k] = [];
+    }
+
+    matrix[k].push(list[i]);
+  }
+
+  return matrix;
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  listToMatrix: listToMatrix,
 }

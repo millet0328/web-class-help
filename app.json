@@ -1,13 +1,41 @@
 {
    "pages": [
+      "pages/list/list",
       "pages/payback/index",
-      "pages/calc/calc",
-      "pages/history/history"
+      "pages/mine/mine",
+      "pages/new/new",
+      "pages/entry/entry"
    ],
    "window": {
       "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#fff",
-      "navigationBarTitleText": "简易计算器",
-      "navigationBarTextStyle": "black"
+      "navigationBarBackgroundColor": "#39b5de",
+      "navigationBarTitleText": "校园の日记",
+      "navigationBarTextStyle": "white",
+      "backgroundColor": "#eceff4"
+   },
+   "permission": {
+      "scope.userLocation": {
+         "desc": "你的位置信息将用于记录创建日记的所在地"
+      }
+   },
+   "tabBar": {
+      "color": "#858585",
+      "selectedColor": "#39b5de",
+      "backgroundColor": "#ffffff",
+      "borderStyle": "black",
+      "list": [
+         {
+            "pagePath": "pages/list/list",
+            "iconPath": "images/icons/mark.png",
+            "selectedIconPath": "images/icons/markHL.png",
+            "text": "印记"
+         },
+         {
+            "pagePath": "pages/mine/mine",
+            "iconPath": "images/icons/mine.png",
+            "selectedIconPath": "images/icons/mineHL.png",
+            "text": "我的"
+         }
+      ]
    }
 }
