@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import "/fonts/stylesheet.wxss";
 
 .container {
 }
@@ -18,12 +19,3 @@
 .gray {
    color: gray;
 }
-
-/* page {
-   width: 100%;
-   height: 100%;
-   padding: 0;
-   background-color: #eceff4;
-   font-size: 30rpx;
-   font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
-} */
