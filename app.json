@@ -1,7 +1,7 @@
 {
    "pages": [
-      "pages/payback/index",
       "pages/index/index",
+      "pages/payback/index",
       "pages/add/add"
    ],
    "window": {
